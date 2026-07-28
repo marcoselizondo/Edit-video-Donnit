@@ -13,6 +13,10 @@ export const loadFonts = () => {
     new FontFace("Inter", `url(${staticFile("Inter.ttf")})`, {
       weight: "100 900",
     }).load(),
+    new FontFace(
+      "Noto Color Emoji",
+      `url(${staticFile("NotoColorEmoji.ttf")})`
+    ).load(),
   ])
     .then((fonts) => {
       fonts.forEach((f) => document.fonts.add(f));
