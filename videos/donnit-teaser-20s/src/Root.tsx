@@ -2,11 +2,20 @@ import { Composition } from "remotion";
 import { DonnitTeaser } from "./DonnitTeaser";
 import { DonnitShowcase } from "./DonnitShowcase";
 import { ProofDS } from "./ProofDS";
+import { ProtoFeel } from "./proto/ProtoFeel";
 import { VIDEO } from "./theme";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="ProtoFeel"
+        component={ProtoFeel}
+        durationInFrames={270}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="DonnitShowcase"
         component={DonnitShowcase}
