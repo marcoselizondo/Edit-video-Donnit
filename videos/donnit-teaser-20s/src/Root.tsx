@@ -1,5 +1,6 @@
 import { Composition } from "remotion";
 import { DonnitTeaser } from "./DonnitTeaser";
+import { DonnitCinematic } from "./DonnitCinematic";
 import { DonnitShowcase } from "./DonnitShowcase";
 import { ProofDS } from "./ProofDS";
 import { VIDEO } from "./theme";
@@ -7,6 +8,14 @@ import { VIDEO } from "./theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="DonnitCinematic"
+        component={DonnitCinematic}
+        durationInFrames={1272}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="DonnitShowcase"
         component={DonnitShowcase}
