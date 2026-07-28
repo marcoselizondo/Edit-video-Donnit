@@ -24,6 +24,10 @@ const PATHS: Record<string, React.ReactNode> = {
   chat: (
     <path d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5a2 2 0 0 1 2-2z" />
   ),
+  check: <path d="M9.5 16.2 5.3 12l-1.4 1.4 5.6 5.6L20.1 7.4l-1.4-1.4z" />,
+  heart: (
+    <path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5.5 6 5.5c2 0 3.2 1.2 4 2.3.8-1.1 2-2.3 4-2.3 3.5 0 5 3.5 3.5 6.5-2.5 4.5-9.5 9-9.5 9z" />
+  ),
 };
 
 export const Icon: React.FC<{
