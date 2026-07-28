@@ -1,4 +1,4 @@
 node_modules/
 stills/
-out/render.log
+out/*.log
 out/smoke.mp4
