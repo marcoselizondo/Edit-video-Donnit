@@ -1,8 +1,21 @@
-# Donnit · Teaser 20s (9:16)
+# Donnit · Videos (9:16)
 
-Teaser vertical para redes (Reels/TikTok/Shorts) construido con **Remotion**.
-Combina footage real del flujo de **donar** con motion graphics de marca para
+Videos verticales para redes (Reels/TikTok/Shorts) construidos con **Remotion**.
+Combinan footage real del flujo de **donar** con motion graphics de marca para
 el mecanismo de **CO₂** y el teaser de **Moments** (alquiler).
+
+> 📖 Índice general y "entrenamiento" (estilo, reglas de marca, toolkit) en el
+> [`README.md` de la raíz](../../README.md).
+
+## Composiciones
+
+- **`DonnitCinematic`** ⭐ (42s) — el video nuevo, basado en el análisis de las
+  referencias (`videos/references/ANALISIS.md`). Teléfono héroe con cámara en
+  mano, chips flotantes, planos de impacto full-bleed y revelado de marca con
+  glow. Pensado con aire para **voz en off**.
+  - `src/DonnitCinematic.tsx` — línea de tiempo (8 beats, 1272 frames @30fps).
+  - `src/cine/` — toolkit cinematográfico (`atmosphere.tsx`, `elements.tsx`).
+- `DonnitTeaser` (20s) — teaser inicial · `DonnitShowcase` (28s) — reel del DS.
 
 ## Estructura
 
@@ -23,7 +36,7 @@ el mecanismo de **CO₂** y el teaser de **Moments** (alquiler).
 
 ```bash
 npm install
-npm run render -- DonnitTeaser out/donnit-teaser.mp4
+npm run render -- DonnitCinematic out/donnit-cinematic.mp4
 # En Mac con Chrome instalado no hace falta --browser-executable.
 ```
 
