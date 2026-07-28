@@ -17,6 +17,9 @@ export const loadFonts = () => {
       "Noto Color Emoji",
       `url(${staticFile("NotoColorEmoji.ttf")})`
     ).load(),
+    new FontFace("Sora", `url(${staticFile("Sora.ttf")})`, {
+      weight: "100 800",
+    }).load(),
   ])
     .then((fonts) => {
       fonts.forEach((f) => document.fonts.add(f));

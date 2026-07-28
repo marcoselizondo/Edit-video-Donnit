@@ -85,17 +85,21 @@ const Phone: React.FC = () => {
   );
 };
 
+// Demo de las 3 animaciones nuevas + verde libre (#8FD678) / verde bosque (#1B4332)
 const intro: Token[] = [
-  { text: "Dona", x: 27, y: 16, size: 168, delay: 6, color: "#fff", entrance: "slam", exitAt: 92 },
-  { text: "hoy", x: 70, y: 11, size: 96, delay: 16, color: "#fff", entrance: "fromTop", rot: -5, exitAt: 92 },
+  // ensamblado: las letras forman "Dona" (verde libre, sobre la foto oscura)
+  { text: "Dona", x: 27, y: 15, size: 158, delay: 6, color: COLORS.green, entrance: "assemble", perChar: 3, exitAt: 92 },
+  // rebote
+  { text: "hoy", x: 67, y: 26, size: 110, delay: 24, color: COLORS.green, entrance: "bounce", exitAt: 92 },
 ];
 const mid: Token[] = [
-  { text: "y suma", x: 20, y: 30, size: 74, delay: 52, color: COLORS.greenDeep, entrance: "fromLeft", exitAt: 150 },
-  { text: "impacto", x: 30, y: 38, size: 104, delay: 60, color: COLORS.greenInk, entrance: "pop", exitAt: 150 },
+  // máquina de escribir (verde bosque, sobre zona clara)
+  { text: "suma impacto", x: 32, y: 41, size: 70, delay: 52, color: COLORS.ink, entrance: "typewriter", perChar: 3, exitAt: 150 },
 ];
 const payoff: Token[] = [
-  { text: "para cuando llegue", x: 34, y: 72, size: 52, delay: 160, color: COLORS.inkSoft, entrance: "fromLeft" },
-  { text: "Moments", x: 60, y: 82, size: 150, delay: 168, color: COLORS.turquoiseDeep, entrance: "slam" },
+  { text: "para cuando llegue", x: 35, y: 72, size: 52, delay: 158, color: COLORS.ink, entrance: "fromLeft" },
+  // ensamblado en turquesa para la palabra estrella
+  { text: "Moments", x: 60, y: 82, size: 150, delay: 168, color: COLORS.turquoiseDeep, entrance: "assemble", perChar: 3 },
 ];
 
 export const ProtoFeel: React.FC = () => {

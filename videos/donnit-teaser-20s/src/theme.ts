@@ -50,9 +50,11 @@ export const COLORS = {
   inkSoft: "#2C463A",
 };
 
+// Tipografía de los VIDEOS (títulos/kinetic). Sora, elegida siguiendo las
+// referencias. (Los componentes de la app usan sus propios tokens DM Sans/Inter.)
 export const FONTS = {
-  display: '"DM Sans", "Liberation Sans", sans-serif',
-  body: '"Inter", "Liberation Sans", sans-serif',
+  display: '"Sora", "Liberation Sans", sans-serif',
+  body: '"Sora", "Liberation Sans", sans-serif',
 };
 
 // Escala tipográfica (px) del DS
