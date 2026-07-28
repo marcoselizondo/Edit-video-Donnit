@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Audio,
   Img,
   interpolate,
   Sequence,
@@ -344,6 +345,15 @@ export const DonnitShowcase: React.FC = () => {
   loadFonts();
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bgWarm }}>
+      <Audio
+        src={staticFile("music/house-vibez.mp3")}
+        volume={(f) =>
+          interpolate(f, [0, 18, 800, 840], [0, 0.72, 0.72, 0], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          })
+        }
+      />
       <Sequence from={0} durationInFrames={90}><SecOpen /></Sequence>
       <Sequence from={90} durationInFrames={150}><SecDonar /></Sequence>
       <Sequence from={240} durationInFrames={150}><SecMoments /></Sequence>
