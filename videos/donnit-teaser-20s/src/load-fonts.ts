@@ -20,6 +20,9 @@ export const loadFonts = () => {
     new FontFace("Sora", `url(${staticFile("Sora.ttf")})`, {
       weight: "100 800",
     }).load(),
+    new FontFace("Archivo", `url(${staticFile("Archivo.ttf")})`, {
+      weight: "100 900",
+    }).load(),
   ])
     .then((fonts) => {
       fonts.forEach((f) => document.fonts.add(f));
