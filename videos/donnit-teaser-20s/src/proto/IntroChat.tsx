@@ -10,7 +10,7 @@ import {
 } from "remotion";
 import { COLORS, FONTS } from "../theme";
 
-const PROMPT = "Lo que no uso…\ny lo que necesito.";
+const PROMPT = "¿Qué hago con los objetos\nque ya no uso?";
 
 // INTRO: se escribe una frase (estilo prompt de IA) y la respuesta es "Donnit".
 export const IntroChat: React.FC = () => {
@@ -19,7 +19,7 @@ export const IntroChat: React.FC = () => {
 
   const boxIn = spring({ frame, fps, config: { damping: 16 } });
   const chars = [...PROMPT];
-  const shown = Math.max(0, Math.min(chars.length, Math.floor((frame - 8) / 2.4)));
+  const shown = Math.max(0, Math.min(chars.length, Math.floor((frame - 8) / 1.9)));
   const typedDone = shown >= chars.length; // ~ frame 86
   const caretOn = Math.floor(frame / 8) % 2 === 0;
 
@@ -56,7 +56,7 @@ export const IntroChat: React.FC = () => {
         <div style={{ fontSize: 24, fontWeight: 700, letterSpacing: 3, color: COLORS.green, marginBottom: 16, textTransform: "uppercase" }}>
           Tú
         </div>
-        <div style={{ fontSize: 58, fontWeight: 700, color: "#EAF3EC", lineHeight: 1.25, whiteSpace: "pre-wrap" }}>
+        <div style={{ fontSize: 52, fontWeight: 700, color: "#EAF3EC", lineHeight: 1.25, whiteSpace: "pre-wrap" }}>
           {chars.slice(0, shown).join("")}
           <span style={{ opacity: caretOn && !typedDone ? 1 : (typedDone ? 0 : 0), color: COLORS.green }}>|</span>
         </div>
