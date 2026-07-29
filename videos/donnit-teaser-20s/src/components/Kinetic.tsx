@@ -27,6 +27,7 @@ export type Token = {
   entrance?: Entrance;
   chip?: string;
   font?: string;
+  shadow?: string; // text-shadow personalizado (p.ej. glow blanco)
   perChar?: number; // frames por carácter (typewriter/assemble)
   exitAt?: number;
 };
@@ -53,7 +54,7 @@ const baseSpan = (t: Token): React.CSSProperties => ({
   color: t.color ?? COLORS.ink,
   letterSpacing: -1.5,
   lineHeight: 1,
-  textShadow: t.chip ? undefined : "0 6px 22px rgba(23,51,31,0.22)",
+  textShadow: t.shadow ?? (t.chip ? undefined : "0 6px 22px rgba(23,51,31,0.22)"),
   padding: t.chip ? "12px 26px" : 0,
   borderRadius: t.chip ? 999 : 0,
   background: t.chip ?? "transparent",
