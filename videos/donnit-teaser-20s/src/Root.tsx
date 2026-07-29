@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { DonnitTeaser } from "./DonnitTeaser";
 import { DonnitShowcase } from "./DonnitShowcase";
+import { DonnitFilm } from "./DonnitFilm";
 import { ProofDS } from "./ProofDS";
 import { ProtoFeel } from "./proto/ProtoFeel";
 import { VIDEO } from "./theme";
@@ -12,6 +13,14 @@ export const RemotionRoot: React.FC = () => {
         id="ProtoFeel"
         component={ProtoFeel}
         durationInFrames={370}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DonnitFilm"
+        component={DonnitFilm}
+        durationInFrames={1800}
         fps={30}
         width={1080}
         height={1920}
