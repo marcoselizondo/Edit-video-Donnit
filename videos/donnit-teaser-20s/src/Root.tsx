@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { DonnitTeaser } from "./DonnitTeaser";
 import { DonnitCinematic } from "./DonnitCinematic";
+import { HiggsfieldReveal } from "./HiggsfieldReveal";
 import { DonnitShowcase } from "./DonnitShowcase";
 import { ProofDS } from "./ProofDS";
 import { VIDEO } from "./theme";
@@ -8,6 +9,14 @@ import { VIDEO } from "./theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="HiggsfieldReveal"
+        component={HiggsfieldReveal}
+        durationInFrames={160}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="DonnitCinematic"
         component={DonnitCinematic}
