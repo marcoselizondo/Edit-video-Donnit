@@ -127,3 +127,28 @@ videos/
 - **Badges oficiales** de App Store / Google Play (los actuales son marcador).
 - (Opcional) footage real "de salón" para acercarse aún más a la ref. *Cursor*.
 - (Opcional) variante corta 15–20s para Reels.
+
+---
+
+## Reel 01 · "De la basura a tu casa"
+
+Reel de descubrimiento (9:16 · 18s) a partir del metraje real de la silla de
+oficina encontrada en la calle. Composición: `src/DeLaBasuraACasa.tsx`
+(id `Reel01-DeLaBasuraACasa`). Render: `out/reel-01-de-la-basura-a-casa.mp4`.
+
+**Decisiones de timing y por qué:**
+- **Hook en 0-3s** con la acción (se agacha a probar la silla) + gancho de texto
+  desde el frame 1: *"Esto estaba tirado en la basura. En Barcelona."*
+- **Cortar, no sostener:** desarrollo en 3 jump cuts secos (~2.3s c/u); el corte
+  de más movimiento (se levanta) va al **85%** para que "aterrice".
+- **Contraste** con el plano general reubicado en el minuto ~10 (no al inicio) +
+  sello *"Estado: PERFECTO ✅"*.
+- **CTA como continuación del hook** (no logo genérico): cierra con
+  *"Lo que tú tiras, tu vecino lo necesita."* + firma pequeña `donnit`. FOMO
+  implícito, sin "no te lo pierdas".
+- **Copy en español peninsular (tú).**
+- **Low-production:** sin corrección de color ni estabilización; solo ambiente
+  real + SFX cortos en los cortes.
+- **Audio:** input no especificado en el brief → se dejó **sin música** (ambiente
+  + SFX), pensado para añadir audio *trending* en Instagram. Placeholder a
+  confirmar.
