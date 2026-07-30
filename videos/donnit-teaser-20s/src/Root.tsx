@@ -5,6 +5,7 @@ import { HiggsfieldReveal } from "./HiggsfieldReveal";
 import { FootageReel, FOOTAGE_REEL_TOTAL } from "./FootageReel";
 import { ReelViral, REEL_VIRAL_TOTAL } from "./ReelViral";
 import { ReelRecut, REEL_RECUT_TOTAL } from "./ReelRecut";
+import { ReelRecutV2, REEL_RECUT_V2_TOTAL } from "./ReelRecutV2";
 import { DonnitShowcase } from "./DonnitShowcase";
 import { ProofDS } from "./ProofDS";
 import { VIDEO } from "./theme";
@@ -12,6 +13,14 @@ import { VIDEO } from "./theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="ReelRecutV2"
+        component={ReelRecutV2}
+        durationInFrames={REEL_RECUT_V2_TOTAL}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="ReelRecut"
         component={ReelRecut}
