@@ -152,3 +152,29 @@ oficina encontrada en la calle. Composición: `src/DeLaBasuraACasa.tsx`
 - **Audio:** input no especificado en el brief → se dejó **sin música** (ambiente
   + SFX), pensado para añadir audio *trending* en Instagram. Placeholder a
   confirmar.
+
+### v2 — con secuencia de app kinética + final con glow
+
+`src/DeLaBasuraACasaV2.tsx` (id `Reel01-DeLaBasuraACasa-V2`) · 24s ·
+render `out/reel-01-v2-app-kinetic.mp4`.
+
+Añade sobre la v1 el eslabón que faltaba: **de la calle a la app**.
+
+- **Secuencia de app (11-20s)**, UI reconstruida con los tokens del DS
+  (`src/reel/appui.tsx`) usando una foto real de *esa misma silla*:
+  1. **Publicar** — la foto entra con overshoot + flash, el título aparece,
+     el badge **GRATIS** golpea, se pulsa "Publicar gratis" → ✓ Publicado.
+  2. **Mapa** — el pin cae con rebote, ondas de radar, pins de vecinos
+     apareciendo en cascada, etiqueta *"Silla de oficina · a 400 m"*.
+  3. **Feed** — la card entra desde abajo, se pulsa **"¡La quiero!"** → *¡Es tuya!*
+- **Etiquetas kinéticas** por pantalla: *"Así que la publiqué"* → *"A 400 m de tu
+  casa"* → *"Alguien ya la está buscando"* (FOMO implícito: crea la necesidad de
+  buscarla, sin pedirlo).
+- **Transición calle→app** con destello verde de marca + SFX de impacto.
+- **Final con glow** (estética ref. Higgsfield): la silla se funde en el halo,
+  aros de energía, logo con **barrido de luz** sobre el wordmark, y remate
+  *"Lo que tú tiras, tu vecino lo necesita."* + *"Búscala en Donnit"*.
+
+**Nota:** las pantallas de app son **UI reconstruida en Remotion**, no capturas
+de pantalla reales de la app en producción. Si se prefiere metraje real, basta
+con sustituir `ScreenPublish/ScreenMap/ScreenFeed` por grabaciones de pantalla.
